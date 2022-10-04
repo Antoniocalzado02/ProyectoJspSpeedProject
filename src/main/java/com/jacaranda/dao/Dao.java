@@ -120,7 +120,7 @@ public class Dao {
 	
 	
 	public HashSet<Shoes> loadList() {
-		Connection conexion=this.conectar();
+		Connection conexion=	this.conectar();
 		HashSet<Shoes> shoesList= new HashSet<>();
 		try {
 			Statement instruccion=conexion.createStatement();
