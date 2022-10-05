@@ -14,15 +14,15 @@
 </head>
 <body>
 <%
-/* HttpSession sesion=request.getSession();
+HttpSession sesion=request.getSession();
 String isSesion = (String) sesion.getAttribute("login");
 String userSesion= (String) sesion.getAttribute("usuario");
 if(isSesion != null && userSesion!=null && isSesion.equals("True") && userSesion.equals("True")){
 	out.println("hola"+userSesion);
 }
-else{ */
+else{
 	%><%-- <jsp:forward page="errorPage.html"></jsp:forward> --%><%
-/* } */
+} 
 %> 
 <header id="main-header">
 		
@@ -35,6 +35,7 @@ else{ */
 				<li><a href="login.html">Inicio</a></li>
 				<li><a href="aboutAs.html">Acerca de</a></li>
 				<li><a href="contactUs.html">Contacto</a></li>
+				<li><a href="index.jsp">Cerrar sesion</a>
 			</ul>
 		</nav>
 
