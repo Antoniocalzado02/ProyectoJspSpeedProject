@@ -13,7 +13,17 @@
 <link href="style.css" rel="stylesheet"> 
 </head>
 <body>
-
+<%
+HttpSession sesion=request.getSession();
+String isSesion = (String) sesion.getAttribute("login");
+String userSesion= (String) sesion.getAttribute("usuario");
+if(isSesion != null && userSesion!=null && isSesion.equals("True") && userSesion.equals("True")){
+	out.println("hola"+userSesion);
+}
+else{
+	%><jsp:forward page="errorPage.html"></jsp:forward><%
+}
+%> 
 <header id="main-header">
 		
 		<a id="logo-header" href="login.html"><img src="final_75x75.png"></a>

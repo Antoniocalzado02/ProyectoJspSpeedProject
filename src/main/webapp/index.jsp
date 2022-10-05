@@ -1,11 +1,11 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Speed</title>
-    <link href="style.css" rel="stylesheet" >
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="style.css" rel="stylesheet"> 
 </head>
 <body>
 
@@ -25,17 +25,17 @@
 
 	</header>
 
-    <form action="bienvenida.html" method="get">
+    <form action="loginExec.jsp" method="get">
         <div id="cuerpo">
 
 
             <div id="login">
                     <br>
                     <div id ="introducir">
-                        <input type="text" class="user" name="user" placeholder="   User" required>
+                        <input type="text" class="usuario" id="usuario" name="usuario" placeholder="   User" required>
                     </div>
                     <div id="introducir">
-                        <input type="password" class="password" name="password" placeholder="   Password" required>
+                        <input type="password" class="password" id="password" name="password" placeholder="   Password" required>
                     </div>
                     <div id ="introducir">
                         <button type="submit" class="join"><h2>Log In</h2></button>
@@ -48,6 +48,7 @@
             </div>
     
         </div>
+        
         <div id="pie">
             <ul class="listaIdiomas">
                 <li>Español (España)</li><li>Català </li><li>English (UK)</li><li>Français (France)</li><li>Română</li><li>Italiano</li><li>Galego</li><li>Deutsch</li><li>Português (Brasil)</li>
