@@ -42,7 +42,7 @@
                     </div>
                     
                     <div id ="introducir">
-                        <input type="number" step="any" class="user" name="price" placeholder="   <%=e.getPrice() %>" min="1">
+                        <input type="number" max="99999" step="any" class="user" name="price" placeholder="   <%=e.getPrice() %>" min="1">
                     </div>
                     <div id="introducir">
                         <input type="number" class="password" name="Size" placeholder="   <%=e.getSizes() %> " min="35" max="51" >

@@ -85,37 +85,26 @@ public class Dao {
 	
 	public void updateShoes(int idShoes,String name,double price,int sizes, boolean stock){
 		Connection conexion=this.conectar();
-		if (name.isEmpty() || name==null) {
-			HashSet<Shoes> lista = this.loadList();
-			for(Shoes e:lista) {
-				if (e.getIdShoes()==idShoes){
-					name=e.getName();
-				}
+		HashSet<Shoes> lista = this.loadList();
+
+		Shoes s=null;
+		for(Shoes e:lista) {
+			if (e.getIdShoes()==idShoes){
+				s=e;
 			}
+		}
+		
+		if (name.isEmpty() || name==null) {
+			name=s.getName();
 		}
 		if (price<=0) {
-			HashSet<Shoes> lista = this.loadList();
-			for(Shoes e:lista) {
-				if (e.getIdShoes()==idShoes){
-					price=e.getPrice();
-				}
-			}
+			price=s.getPrice();
 		}
 		if (sizes<=35 || sizes>=52) {
-			HashSet<Shoes> lista = this.loadList();
-			for(Shoes e:lista) {
-				if (e.getIdShoes()==idShoes){
-					sizes=e.getSizes();
-				}
-			}
+			sizes=s.getSizes();
 		}
 		if (stock!=true || stock!=false) {
-			HashSet<Shoes> lista = this.loadList();
-			for(Shoes e:lista) {
-				if (e.getIdShoes()==idShoes){
-					stock=e.isStock();
-				}
-			}
+			stock=s.isStock();
 		}
 		try {
 			Statement instruccion=conexion.createStatement();
