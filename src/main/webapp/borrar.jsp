@@ -11,10 +11,10 @@
 <body>
 	<%
 	Dao d=new Dao();
-	//d.deleteShoes(Integer.valueOf(request.getParameter("id")));
+	d.deleteShoes(Integer.valueOf(request.getParameter("id")));
+	String redirect="main.jsp";
+	response.sendRedirect(redirect);
 	%>
-	<a href="main.jsp" name="borrar">Borrar</a>
-
-	<a href="main.jsp">No borrar</a>
+	
 </body>
 </html>

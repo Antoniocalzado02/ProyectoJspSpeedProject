@@ -68,10 +68,24 @@ public class Dao {
 			e.printStackTrace();
 		}
 	}
+	public Shoes findShoe(int idShoes) {
+
+		Shoes newShoes=null;
+		HashSet<Shoes> lista = this.loadList();
+		for(Shoes e:lista) {
+			System.out.println(e.toString());
+			if (e.getIdShoes()==idShoes) {
+				newShoes=e;
+			}
+			
+		}
+		return newShoes;
+	}
+	
 	
 	public void updateShoes(int idShoes,String name,double price,int sizes, boolean stock){
 		Connection conexion=this.conectar();
-		if (name.isEmpty()) {
+		if (name.isEmpty() || name==null) {
 			HashSet<Shoes> lista = this.loadList();
 			for(Shoes e:lista) {
 				if (e.getIdShoes()==idShoes){

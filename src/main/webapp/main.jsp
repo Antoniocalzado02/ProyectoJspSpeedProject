@@ -32,7 +32,7 @@
 	
     <form action="main.jsp" method="get">
         <div id="cuerpo">
-        <button name="annadir">Añadir</button>
+        <a href="annadir.jsp" name="annadir">Añadir</a>
 			<table id="tabla" border="1">
 				<tr>
 					<td>
@@ -80,7 +80,7 @@
 					 			<%=e.isStock()%>
 					 		</td>
 					 		<td>
-					 			<button name="editar">Editar</button>
+					 			<a href="editar.jsp?id=<%=e.getIdShoes()%>">Editar</a>
 					 			<a href="borrar.jsp?id=<%=e.getIdShoes()%>">Borrar</a>
 					 		
 					 		</td>
@@ -88,7 +88,6 @@
 					 
 						<%
 					 } 
-					 
 					 %>
 					
 			
@@ -97,9 +96,6 @@
          
         </div>
     </form>
-    <% 
-    String valor=request.getParameter("boton");
-    %>
     
 	<script src="script.js"></script>
 </body>
