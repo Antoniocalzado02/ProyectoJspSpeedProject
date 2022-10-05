@@ -31,10 +31,14 @@
     	response.sendRedirect(redirect);
     } */
     
+    Boolean stock=false;
     
+    if (request.getParameter("Stock").equals("Stock")){
+    	stock=true;
+    }
 
 	Dao d=new Dao();
-	d.updateShoes(Integer.valueOf(request.getParameter("ID")), request.getParameter("name"), Double.valueOf(request.getParameter("price")), Integer.valueOf(request.getParameter("Size")), true);
+	d.updateShoes(Integer.valueOf(request.getParameter("ID")), request.getParameter("name"), Double.valueOf(request.getParameter("price")), Integer.valueOf(request.getParameter("Size")), stock);
 	String redirect="main.jsp";
 	response.sendRedirect(redirect);
     %>

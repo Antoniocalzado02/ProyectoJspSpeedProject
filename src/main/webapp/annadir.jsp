@@ -48,9 +48,9 @@
                         <input type="number" class="password" name="size" placeholder="   Sizes " min="35" max="51" required>
                     </div>
                     <div id="introducir">
-                        <input type="number" class="password" name="Day" placeholder="   Day "  required>
-                        <input type="number" class="password" name="Month" placeholder="   Month "  required>
-                        <input type="number" class="password" name="Year" placeholder="   Year "  required>
+                        <input type="number" class="password" name="Day" placeholder="   Day "  required min="1" max="30">
+                        <input type="number" class="password" name="Month" placeholder="   Month "  required min="1" max="12">
+                        <input type="number" class="password" name="Year" placeholder="   Year "  required min="1970" max="2050">
                     </div>
                     
                     <div id="introducir">
