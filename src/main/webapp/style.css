@@ -1,6 +1,8 @@
-body{
+html, body{
     margin: 0px;
     padding: 0px;
+    height: 100%;
+    background-color: #326b42;
     
    
 }
@@ -9,19 +11,7 @@ body{
 	font-family: Helvetica, Arial, sans-serif;
 }
 
-.listaIdiomas{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
 
-}
-
-.listaIdiomas li{
-    display: inline-block;
-    height: 1.5em;
-    padding-right: 10px;
-
-}
 
 hr{
     margin-top: 0.7em; 
@@ -31,22 +21,23 @@ hr{
 
 #cuerpo {
     background-color: #f1f2f5;
-    height: 550px; 
+    height: 700px; 
     width: 100% ;
     text-align: center;
     background-image: url("Jordan-Backgrounds2.jpg");
     background-size: 100%;
-    padding-top: 10em;
+    padding-top: 15em;
 }
 
 #login {
     background-color: rgb(255, 255, 255) ;
     margin: 0 auto;
-    width: 24.8em; 
+    width: 24.95em; 
     height: 18.5em;
     box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%); 
     border-radius: 8px;
     text-align: center;
+    
 }
 
 #introducir{
@@ -54,7 +45,7 @@ hr{
     height: 3em;
 }
 
-.user {
+.usuario {
     width: 27em;
     height: 3.5em;
     border-radius: 8px;
@@ -69,7 +60,8 @@ hr{
 }
 
 .join {
-    width: 27.5em;
+	text-decoration:none;
+    width: 27.7em;
     height: 60px;
     background: #333;
     color: white;
@@ -80,7 +72,7 @@ hr{
 }
 
 .join:hover {
-    width: 27.5em;
+    width: 27.7em;
     height: 60px;
     background: rgb(37, 37, 37);
     color: white;
@@ -92,7 +84,7 @@ hr{
 }
 
 .join:active {
-    width: 27.5em;
+    width: 27.7em;
     height: 60px;
     background: rgb(0, 0, 0);
     color: white;
@@ -102,14 +94,7 @@ hr{
     border: 0px;   
 }
 
-#pie {
-    margin-top: 30px; 
-    background-color: #ffffff ; 
-    font-size: 12px; 
-    color: #8a8d91; 
-    text-align: center;
-    margin-bottom: 2em;
-}
+
 
 #main-header {
 	background: #333;
@@ -188,12 +173,258 @@ nav ul li a:hover {
 }
 
 #encontrado{
-	background-image: url('https://img.freepik.com/vector-gratis/error-404-perdido-ilustracion-concepto-espacio_114360-7871.jpg?w=740&t=st=1664436770~exp=1664437370~hmac=869f0ede4cb4a5093c4c27adad3f6c0debd58c25dd88df35a7ae94d34a9898d4');
-	width: 100%;
-	height: 39em;
+ 	background-image: url('error.jpg.png');
+ 	background-color: white;
+ 	height: 100%;
+ 	width: 100%;
+ 	background-size:80%;
 	background-position: center;
-	background-size: 70%;
 	background-repeat: no-repeat;
 	
+}
+
+
+
+a[href*="editar.jsp"] {
+size: 0.2em;
+
+}
+
+a[href*="borrar.jsp"] {
+size: 0.2em;
+
+}
+
+#buttonIcon{
+	width: 10em;
+	text-align: center;
+	margin: 0 auto;
+	color:white;
+}
+
+#tablaInfo{
+	text-align: center;
+	margin: 0 auto;
+	
+}
+
+.tdId{
+	width: 10em;
+}
+
+.tdPrice{
+	width: 8em;
+}
+
+.tdSize{
+	width: 8em;
+}
+
+.tdStock{
+	width: 10em;
+}
+
+.tdRelease{
+	width: 20em;
+}
+
+.tdName{
+	width: 50em;
+}
+
+
+#tabla{
+	width:98.5%;
+	height: 15em;
+	border-collapse: collapse;
+	background-color: rgb(255, 255, 255);
+	padding: 1em;
+	margin: 1em;
+	border: 1px solid black;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%); 
+	table-layout: fixed
+	
+	
+}
+
+#cuerpoMain {
+    background-color: #f1f2f5;
+    width: 100% ;
+    text-align: center;
+    background-size: 100%;
+    height: 91.5%;
+    background-color: #326b42;
+}
+
+tr{
+	height: 1em;
+	margin: 0;
+	padding: 0;
+} 
+
+
+.annadirBoton {
+	text-decoration: none;
+	box-shadow: 0 2px 4px rgb(0 0 0 / 30%), 0 8px 16px rgb(0 0 0 / 30%);
+	width: 15em;
+    height: 40px;
+    background: #CE3430;
+    color: white;
+    border-radius: 8px;
+}
+
+.annadirBoton:hover {
+	text-decoration: none;
+	box-shadow: 0 2px 4px rgb(0 0 0 / 30%), 0 8px 16px rgb(0 0 0 / 30%);
+	width: 15em;
+    height: 40px;
+    background: #AA2925;
+    color: white;
+    border-radius: 8px;
+    cursor:pointer;  
+}
+
+.annadirBoton:active {
+	text-decoration: none;
+    width: 15em;
+    height: 40px;
+    background: #93221F;
+    color: white;
+    margin-top: 0;
+    text-align: center;
+    border-radius: 8px;
+    border: 0px;   
+}
+
+
+
+
+#pie {
+    margin-top: 30px; 
+    background-color: #ffffff ; 
+    font-size: 12px; 
+    color: #8a8d91; 
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.listaIdiomas{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.listaIdiomas li{
+    display: inline-block;
+    height: 5em;
+    padding-right: 10px;
+    margin-top: 2em;
+
+}
+
+ul.listaIdiomas{
+	margin-top: 10em;
+}
+
+footer{
+	
+	margin-top: 20em;
+}
+
+input{
+	padding-left: 0.4rem;
+	padding-right: 0;
+}
+
+#titulos{
+	background: #333;
+	color: white;
+	height: 1em;
+}
+
+#fondoBlanco{
+	background-color: white;
+}
+
+.annadirOrdenar{
+	width: 27em;
+    height: 3.5em;
+    border-radius: 8px;
+    border: 1px solid #d1d3da;
+	margin-top: 1em;
+}
+
+.radio{
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+#loginAnnadir{
+	background-color: rgb(255, 255, 255) ;
+    margin: 0 auto;
+    width: 24.95em; 
+    height: 42.5em;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%); 
+    border-radius: 8px;
+    text-align: center;
+}
+
+.joinCancelar {
+	float: left;
+	text-decoration:none;
+   	width: 23em;
+    height: 60px;
+    background: #CE3430;
+    color: white;
+    margin-top: 0;
+    text-align: center;
+    border-radius: 8px;
+    border: 0px; 
+    margin-left: 0.85em;
+}
+
+#cuerpoAnnadir{
+	background-color: #f1f2f5;
+    height: 777px; 
+    width: 100% ;
+    text-align: center;
+    background-image: url("Jordan-Backgrounds2.jpg");
+    background-size: 100%;
+    padding-top: 5em;
+}
+
+#loginEditar{
+	background-color: rgb(255, 255, 255) ;
+    margin: 0 auto;
+    width: 24.95em; 
+    height: 30em;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%); 
+    border-radius: 8px;
+    text-align: center;
+}
+
+.joinCancelarEditar {
+	float: left;
+	text-decoration:none;
+   	width: 23em;
+    height: 60px;
+    background: #CE3430;
+    color: white;
+    margin-top: 0;
+    text-align: center;
+    border-radius: 8px;
+    border: 0px; 
+}
+
+#loginBorrar{
+	background-color: rgb(255, 255, 255) ;
+    margin: 0 auto;
+    width: 24.95em; 
+    height: 19.5em;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%); 
+    border-radius: 8px;
+    text-align: center;
 }
 

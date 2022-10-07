@@ -13,8 +13,7 @@
 	Dao d=new Dao();
 	d.deleteShoes(Integer.valueOf(request.getParameter("id")));
 	String redirect="main.jsp";
-	response.sendRedirect(redirect);
-	%>
+	response.sendRedirect(redirect); %>
 	
 </body>
 </html>
