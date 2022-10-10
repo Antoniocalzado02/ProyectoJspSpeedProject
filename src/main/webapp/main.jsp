@@ -14,11 +14,12 @@
 </head>
 <body>
 <%
+String bienvenida="";
 HttpSession sesion=request.getSession();
 String isSesion = (String) sesion.getAttribute("login");
 String userSesion= (String) sesion.getAttribute("usuario");
-if(isSesion != null && userSesion!=null && isSesion.equals("True") && userSesion.equals("True")){
-	out.println("hola"+userSesion);
+if(isSesion != null && userSesion!=null && isSesion.equals("True")){
+	bienvenida=("Sesion: "+userSesion);
 }
 else{
 	%><jsp:forward page="errorPage.html"></jsp:forward><%
@@ -27,8 +28,10 @@ else{
 <header id="main-header">
 <a id="logo-header" href="main.jsp"><img src="final_75x75.png"></a>
 <a id="title" href="main.jsp">SPEED</a>
+
 <nav>
 <ul>
+<%out.print(bienvenida); %>
 <li><a href="index.jsp">Cerrar sesion</a>
 </ul>
 </nav>
