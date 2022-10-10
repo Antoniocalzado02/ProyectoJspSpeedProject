@@ -31,8 +31,10 @@ else{
 
 <nav>
 <ul>
-<%out.print(bienvenida); %>
-<li><a href="index.jsp">Cerrar sesion</a>
+<li><%out.print(bienvenida); %></li>
+<li><a href="index.jsp">Cerrar sesion</a></li>
+<li><a href="aboutAs.html">Acerca de</a></li>
+<li><a href="contactUs.html">Contacto</a></li>
 </ul>
 </nav>
 </header>
