@@ -31,7 +31,11 @@
 
             <div id="loginBorrar">
                     <br>
-                    	<h1>¿Seguro que quieres borrar este producto?</h1><br>
+                    <% Dao d=new Dao();
+                    Shoes shoe=d.findShoe(Integer.parseInt(request.getParameter("id")));
+                    String shoeName=shoe.getName();
+                    %>
+                    	<h1>¿Seguro que quieres borrar el producto <%=shoeName %>?</h1><br>
                     	<a href="borrar.jsp?id=<%=request.getParameter("id")%>" class="joinCancelar" style="background: #333; margin-bottom: 1em;"><h2>Confirmar</h2></a>
                         <a href="main.jsp" class="joinCancelar"><h2>Cancelar</h2></a>
                     <br>

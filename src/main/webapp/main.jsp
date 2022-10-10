@@ -12,7 +12,8 @@
 <title>Speed Main</title>
 <link href="style.css" rel="stylesheet"> 
 </head>
-<body><%
+<body>
+<%
 HttpSession sesion=request.getSession();
 String isSesion = (String) sesion.getAttribute("login");
 String userSesion= (String) sesion.getAttribute("usuario");
@@ -22,7 +23,7 @@ if(isSesion != null && userSesion!=null && isSesion.equals("True") && userSesion
 else{
 	%><jsp:forward page="errorPage.html"></jsp:forward><%
 } 
-%>  
+%>
 <header id="main-header">
 <a id="logo-header" href="main.jsp"><img src="final_75x75.png"></a>
 <a id="title" href="main.jsp">SPEED</a>
