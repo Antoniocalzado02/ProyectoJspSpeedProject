@@ -36,16 +36,16 @@
             <div id="loginEditar">
                     <br>
                     <div id="introducir">
-                        <input type="text" class="annadirOrdenar" name="name" placeholder="<%=e.getName() %>" >
+                        <input type="text" class="annadirOrdenar" name="name" value="<%=e.getName() %>"required >
                     </div>
                     
                     <div id ="introducir">
-                        <input type="number" max="99999" step="any" class="annadirOrdenar" name="price" placeholder="<%=e.getPrice() %>" min="1">
+                        <input type="number" max="99999" step="any" class="annadirOrdenar" required name="price" value="<%=e.getPrice() %>" min="1">
                     </div>
                     <div id="introducir">
-                        <input type="number" class="annadirOrdenar" name="Size" placeholder="<%=e.getSizes() %>" min="35" max="51" >
+                        <input type="number" class="annadirOrdenar" name="Size" required value="<%=e.getSizes() %>" min="35" max="51" >
                     </div>
-                    <input type="hidden" name="ID" value="<%=request.getParameter("id")%>">
+                    <input type="hidden" name="ID" required value="<%=request.getParameter("id")%>">
                     <div id="introducir">
                         <input type="radio" class="radio" name="Stock" value="Stock" checked>Stock
                         <input type="radio" class="radio" name="Stock" value="No Stock">No Stock

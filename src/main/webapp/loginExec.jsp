@@ -10,7 +10,7 @@
 <%
 	String usuario= request.getParameter("usuario");
 	String password= request.getParameter("password");
-	if(usuario.equals("pimpollo1234") && password.equals("manolito")){
+	if(usuario.equals("javi") && password.equals("javi")){
 		HttpSession sesion=request.getSession();
 		sesion.setAttribute("login", "True");
 		sesion.setAttribute("usuario", usuario);%>
